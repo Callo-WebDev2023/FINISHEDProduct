@@ -166,7 +166,6 @@ if (logoutBtn) {
 
 }
 
-
 // responsive menu 
 const links = document.querySelector('.nav-links');
 const openMenu = document.querySelector('.open-menu');
