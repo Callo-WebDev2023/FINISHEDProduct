@@ -33,7 +33,7 @@ if (signupForm) {
       fullname.style.border = '2px solid red';
 
     } else if (fullNameValue.length < 5) {
-      fnameError.innerText = 'Minimum length required is 8.';
+      fnameError.innerText = 'Minimum length required is 5.';
       fnameError.classList.add('error');
       fullname.style.border = '2px solid red';
 
@@ -102,17 +102,7 @@ if (signupForm) {
   });
 }
 
-// regular expressions
 
-function validEmail(email) {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
-
-function validPassword(password) {
-  const re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@._$!%*#?&])[A-Za-z\d@._$!%*#?&]{8,}$/;
-  return re.test(password);
-}
 
 
 //user login
@@ -164,6 +154,20 @@ if (logoutBtn) {
     location.replace('index.html');
   });
 
+}
+
+
+
+// regular expressions
+
+function validEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function validPassword(password) {
+  const re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@._$!%*#?&])[A-Za-z\d@._$!%*#?&]{8,}$/;
+  return re.test(password);
 }
 
 // responsive menu 
