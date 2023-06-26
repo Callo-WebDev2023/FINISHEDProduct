@@ -1,3 +1,4 @@
+
 @media (max-width: 700px) {
     
     .nav-panel .nav-links {
@@ -95,8 +96,68 @@
     }
   
     .finalresult {
-      font-size: 1.3rem;
+      font-size: 1.083vw;
     }
   
+  }
+
+  @media (max-width: 1000px) {
+   
+
+    .form h1 {
+      font-size: 0.833vw;
+      margin-bottom: 5px;
+    }
+
+
+    .finalresult {
+      font-size: 4.167vw;
+    }
+
+    .link-hehe {
+      display: none;
+      position: absolute;
+      overflow: auto;
+      box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    }
+    
+    .logout:hover .link-hehe {
+      display: block;
+    }
+    
+    .link-hehe a {
+      display: block;
+      color: #000000;
+      padding: 5px;
+      text-decoration: none;
+      padding:20px 40px;
+    }
+    
+    .link-hehe a:hover {
+      color: #0a0a23;
+      background-color: #ddd;
+      border-radius:5px;
+    }
   
+    .section-text-fromheadline{
+      position: relative;
+      font-size: x-large;
+      color: white;
+    }
+  
+    .explore {
+      color:rgb(0, 255, 42);
+      
+      text-decoration: none;
+      top: 60px;
+      position: relative;
+      font-size: 80px;
+      animation: fadeIn 5s;
+    }
+  
+    .explore:hover {
+      transition: 2s ease;
+      color:rgb(229, 255, 0);
+    }
+
   }
