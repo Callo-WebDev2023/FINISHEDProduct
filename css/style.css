@@ -9,9 +9,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/FINALIZEPIT-WEB/image/steamcommunity.gif');
+    background-image: url('/image/steamcommunity.gif');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   .nav-panel {
@@ -233,7 +234,7 @@
     color:rgb(0, 255, 42);
     
     text-decoration: none;
-    top: 60px;
+    top: 1px;
     position: relative;
     font-size: 80px;
     animation: fadeIn 5s;
@@ -248,3 +249,19 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  display:flex;
+  align-items: flex-start;
+  padding: 0px 0px 10px 0px;
+  text-align:top;
+  
+}
+
