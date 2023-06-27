@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/image/steamcommunity.gif");
+    background-image: url("../image/steamcommunity.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
