@@ -1,56 +1,1361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JAVASCRIPT FORM VALIDATION</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>YANSHOP - BEST ONLINE TECH STORE IN PH</title>
+  <meta name="title" content="YANSHOP - BEST ONLINE TECH STORE IN PH">
+  <meta name="description" content="ONE OF THE BEST TECH STORE, EASY TO BUY AND FAST!">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="YAN_SHOP_2.png" type="image/png">
+
+  <!-- 
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/107ee2fbd9.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
-<body>
 
-  <nav class="nav-panel">
-    <div class="web-name">Website Logo</div>
-    <div class="open-menu"><i class="fa-solid fa-bars"></i></div>
-    <ul class="nav-links">
-      <li class="home">
-        <a href="member.html" class="link">Home</a>
-      </li>
-      <li class="logout">
-        <a class="link"><span id="fullname"></span></a>
-        <div class="link-hehe">
-        <button id="logout" class="logout-btn">Logout</button>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <img src="./assets/images/YAN_SHOP_21.png" width="130" height="32" alt="YANSHOP homeclick" class="logo">
+        <img src="./assets/images/YAN_SHOP_21M.png" width="55" height="55" alt="YANSHOP homeclick" class="mobile-logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+      <li><a href="member.html" class="navbar-link label-lg link:hover">Home</a></li>
+		  <li><a href="#secondpart" class="navbar-link label-lg link:hover">Explore</a></li>
+
+		  <li><a href="#thirdpart" class="navbar-link label-lg link:hover">How to Buy</a></li>
+
+      <li><a href="#fourthpart" class="navbar-link label-lg link:hover">Contact Us</a></li>
+		  <li><a href="#" class="navbar-link label-lg link:hover">Profile</a></li>
+      <li><button class="navbar-link label-lg link:hover" id="logout">Logout</button></li>
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        
+        <button class="btn-icon primary" aria-label="search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <button class="btn-icon profile-btn" aria-label="Account: Earl Dave Elaco">
+          <img src="./assets/images/akopic.png" width="50" height="50" alt="Earl Dave Elaco" class="img-cover">
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="menu toggle" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true" class="default-icon"></ion-icon>
+          <ion-icon name="close-outline" aria-hidden="true" class="active-icon"></ion-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #main-descript
+      -->
+
+      <section class="section main-descript" aria-label="home">
+        <div class="container">
+
+          <h1 class="headline-lg main-descript-title">
+            Hello <span id="fullname"></span>WELCOME TO <span class="span">PC COMPONENTS</span>
+          </h1>
+
+          <p class="section-text body-lg">
+            Check out our wide selection of computer pheriperals, cards, system and more items!
+          </p>
+
+          <a href="#" class="btn">EXPLORE</a>
+
         </div>
-      </li>
-      <div class="close-menu"><i class="fa-solid fa-xmark"></i></div>
-    </ul>
-  </nav>
+      </section>
 
-  <h1 class="finalresult">PC COMPONENTS</h1>
-    <a href="https://it223-web-system-and-technologies.github.io/elaco_callo_finalpitmainpage/" class="explore"> EXPLORE</a>
+      <!-- 
+        RUNNING ITEMS
+      -->
+
+      <div class="display">
+        <div> <img src='400 (3).png'/> <img src='400 (1).png'/> <img src="msi2.png"/> </div>
+          <div> <img src= "w300 (2).png" /> <img src= '400 (2).png'/> <img src="msi3.png"/> </div>
+        </div> </div>
+
+
+      <!-- 
+        - #LSIT OF ITEMS
+      -->
+
+      <section class="section list-of-label-pc-products" id="secondpart" aria-labelledby="label-of-products">
+        <div class="container"><br><br><br>
+          
+          <div class="title-wrapper">
+            <h2 class="headline-md section-title text-center" id="label-of-products">YANSHOP FLASH DEALS</h2>
+
+            <a href="#" class="btn-link link:hover">
+              <span class="span">See More</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container" data-slider-container>
+
+              <li class="slider-item">
+                <div class="collection-yanwebshop yanwebshop">
+
+                  <figure class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                    <img src="./assets/images/showcase-1.jpg" width="500" height="500" loading="lazy"
+                      alt="Digital Collection" class="img-cover">
+                  </figure>
+
+                  <div class="yanwebshop-content">
+
+
+                    <h3 class="title-md yanwebshop-title">
+                      <a href="#" class="link:hover">Digital Collection</a>
+                    </h3>
+
+                    <p class="label-md yanwebshop-author">
+                      by <a href="#" class="link">@CutieGirl</a>
+                    </p>
+
+                    <p class="yanwebshop-text">25 Items</p>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div class="collection-yanwebshop yanwebshop">
+
+                  <figure class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                    <img src="./assets/images/showcase-2.jpg" width="500" height="500" loading="lazy"
+                      alt="GIF Collection" class="img-cover">
+                  </figure>
+
+                  <div class="yanwebshop-content">
+
+                    <h3 class="title-md yanwebshop-title">
+                      <a href="#" class="link:hover">GIF Collection</a>
+                    </h3>
+
+                    <p class="label-md yanwebshop-author">
+                      by <a href="#" class="link">@ButterFly</a>
+                    </p>
+
+                    <p class="yanwebshop-text">25 Items</p>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div class="collection-yanwebshop yanwebshop">
+
+                  <figure class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                    <img src="./assets/images/showcase-3.jpg" width="500" height="500" loading="lazy"
+                      alt="Sports Collection" class="img-cover">
+                  </figure>
+
+                  <div class="yanwebshop-content">
+
+
+
+                    <h3 class="title-md yanwebshop-title">
+                      <a href="#" class="link:hover">Sports Collection</a>
+                    </h3>
+
+                    <p class="label-md yanwebshop-author">
+                      by <a href="#" class="link">@NorseQueen</a>
+                    </p>
+
+                    <p class="yanwebshop-text">25 Items</p>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div class="collection-yanwebshop yanwebshop">
+
+                  <figure class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                    <img src="./assets/images/showcase-4.jpg" width="500" height="500" loading="lazy"
+                      alt="Photography Collection" class="img-cover">
+                  </figure>
+
+                  <div class="yanwebshop-content">
+
+
+                    <h3 class="title-md yanwebshop-title">
+                      <a href="#" class="link:hover">Photography Collection</a>
+                    </h3>
+
+                    <p class="label-md yanwebshop-author">
+                      by <a href="#" class="link">@BigBull</a>
+                    </p>
+
+                    <p class="yanwebshop-text">25 Items</p>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div class="collection-yanwebshop yanwebshop">
+
+                  <figure class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                    <img src="./assets/images/showcase-5.jpg" width="500" height="500" loading="lazy"
+                      alt="Illustrations Collection" class="img-cover">
+                  </figure>
+
+                  <div class="yanwebshop-content">
+
+                    <h3 class="title-md yanwebshop-title">
+                      <a href="#" class="link:hover">Illustrations Collection</a>
+                    </h3>
+
+                    <p class="label-md yanwebshop-author">
+                      by <a href="#" class="link">@Angel</a>
+                    </p>
+
+                    <p class="yanwebshop-text">25 Items</p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div class="collection-yanwebshop yanwebshop">
+
+                  <figure class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                    <img src="./assets/images/showcase-6.gif" width="500" height="500" loading="lazy"
+                      alt="Animations Collection" class="img-cover">
+                  </figure>
+
+                  <div class="yanwebshop-content">
+
+
+
+                    <h3 class="title-md yanwebshop-title">
+                      <a href="#" class="link:hover">Animations Collection</a>
+                    </h3>
+
+                    <p class="label-md yanwebshop-author">
+                      by <a href="#" class="link">@CrazyAnyone</a>
+                    </p>
+
+                    <p class="yanwebshop-text">25 Items</p>
+
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+            <button class="slider-btn prev" aria-label="Slide to previous item" data-slider-prev>
+              <ion-icon name="chevron-back-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="Slide to next item" data-slider-next>
+              <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+          </div>
+
+          <a href="#" class="btn-link link:hover">
+            <span class="span">See More</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #DISCOVER ITEM
+      -->
+
+      <section class="section discover" aria-labelledby="discover-label">
+        <div class="container">
+          <h2 class="headline-md section-title text-center" id="discover-label">CURRENT AVAILABLE ITEMS</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-8.gif" width="500" height="500" loading="lazy"
+                    alt="Genuine Undead #3902" class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Genuine Undead #3902</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-7.jpg" width="500" height="500" loading="lazy" alt="Windchime #768"
+                    class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Windchime #768</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-6.gif" width="500" height="500" loading="lazy"
+                    alt="Probably A Label #3277" class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Probably A Label #3277</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-5.jpg" width="500" height="500" loading="lazy"
+                    alt="Probably A Label #1711" class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Probably A Label #1711</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-4.jpg" width="500" height="500" loading="lazy"
+                    alt="Shibuya Scramble Punks" class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Shibuya Scramble Punks</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-3.jpg" width="500" height="500" loading="lazy"
+                    alt="Probably A Label #650" class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Probably A Label #650</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-2.jpg" width="500" height="500" loading="lazy" alt="Looki #0147"
+                    class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Looki #0147</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="discover-yanwebshop yanwebshop">
+
+                <div class="yanwebshop-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/showcase-1.jpg" width="500" height="500" loading="lazy" alt="Poob #285"
+                    class="img-cover">
+
+                  <button class="btn btn-primary">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+
+                    <span class="span">Buy now</span>
+                  </button>
+                </div>
+
+
+
+                <h3 class="title-sm yanwebshop-title">
+                  <a href="#" class="link:hover">Poob #285</a>
+                </h3>
+
+                <div class="yanwebshop-meta">
+
+                  <div>
+                    <p>Price</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.5 ETH</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p>SRP</p>
+
+                    <div class="yanwebshop-price">
+                      <!-- <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon"> -->
+
+                      <span class="span">3.55 ETH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn-link link:hover">
+            <span class="span">LOAD MORE</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - SELLERS
+      -->
+
+      <section class="section sellers" aria-labelledby="sellers-label">
+        <div class="container">
+
+          <h2 class="headline-md section-title text-center" id="sellers-label">BEST SELLER ITEMS</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-1.jpg" width="64" height="64" loading="lazy"
+                    alt="Steven Townsend profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Steven Townsend</a>
+                  </h3>
+
+                  <p class="user-name label-md">@StreetBoy</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Steven Townsend">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-2.jpg" width="64" height="64" loading="lazy"
+                    alt="Tiffany Betancourt profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Tiffany Betancourt</a>
+                  </h3>
+
+                  <p class="user-name label-md">@CutieGirl</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Tiffany Betancourt">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-3.jpg" width="64" height="64" loading="lazy"
+                    alt="Jacqueline Burns profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Jacqueline Burns</a>
+                  </h3>
+
+                  <p class="user-name label-md">@ButterFly</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Jacqueline Burns">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-4.jpg" width="64" height="64" loading="lazy"
+                    alt="Mari Harrington profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Mari Harrington</a>
+                  </h3>
+
+                  <p class="user-name label-md">@NorseQueen</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Mari Harrington">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-5.jpg" width="64" height="64" loading="lazy"
+                    alt="Floyd Glasgow profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Floyd Glasgow</a>
+                  </h3>
+
+                  <p class="user-name label-md">@BigBull</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Floyd Glasgow">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-6.gif" width="64" height="64" loading="lazy"
+                    alt="Donna Schultz profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Donna Schultz</a>
+                  </h3>
+
+                  <p class="user-name label-md">@Angel</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Donna Schultz">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-7.jpg" width="64" height="64" loading="lazy"
+                    alt="Joshua Morris profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Joshua Morris</a>
+                  </h3>
+
+                  <p class="user-name label-md">@CrazyAnyone</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Joshua Morris">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-8.jpg" width="64" height="64" loading="lazy"
+                    alt="Rosaria Vargas profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Rosaria Vargas</a>
+                  </h3>
+
+                  <p class="user-name label-md">@Princess</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Rosaria Vargas">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="seller-yanwebshop yanwebshop">
+
+                <figure class="yanwebshop-banner">
+                  <img src="./assets/images/avatar-2.jpg" width="64" height="64" loading="lazy"
+                    alt="Carl Williams profile">
+
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </figure>
+
+                <div class="yanwebshop-title-wrapper">
+                  <h3 class="title-sm">
+                    <a href="#" class="link:hover">Carl Williams</a>
+                  </h3>
+
+                  <p class="user-name label-md">@LooserBad</p>
+                </div>
+
+                <button class="btn-icon outline" aria-label="Hire Carl Williams">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #QNA
+      -->
+      
+      <section class="section qna" id="thirdpart" aria-label="question and answer">
+        <div class="container">
+          <br><br><br>
+          <h2 class="headline-md section-title text-center">HOW TO BUY</h2>
+
+          <p class="section-text body-md text-center">
+            We are dedicated to serving and meeting customer requests for a better electronic shopping experience.
+          </p>
+
+          <ul class="qna-list">
+
+            <li class="qna-item">
+              <div class="qna-yanwebshop" data-accordion>
+
+                <button class="qna-btn" data-accordion-btn>
+                  <h3 class="title-sm">How do I buy?</h3>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="qna-content">
+                  <p align="justify" class="body-md">
+                    1. Browse and search for products to purchase. <br>
+					2. Add to Cart, Check Out, and Finish Your Purchase. <br>
+					3. For registration and delivery details, enter your account information. You may login or register using social network accounts such as Google or Facebook. <br>
+					4. Keep an eye on your Account for order progress updates. <br>
+					5. We are dedicated to serving and meeting customer requests for a better electronic shopping experience. Thank you very much. <br>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="qna-item">
+              <div class="qna-yanwebshop" data-accordion>
+
+                <button class="qna-btn" data-accordion-btn>
+                  <h3 class="title-sm">What are Overseas Stocks and Domestic Stocks?</h3>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="qna-content">
+                  <p align="justify" class="body-md">
+                    (Overseas) Stocks from other countries. Local brand warranties may still apply through our fulfillment. If local inventories arrive before orders from other countries, we change the availability status to domestic and dispatch the order from domestic stocks. 
+					(Domestic) Stocks are now accessible in a nearby room, warehouse, and distributor. We switch availability to abroad or out of stock if we sell out locally.
+
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="qna-item">
+              <div class="qna-yanwebshop" data-accordion>
+
+                <button class="qna-btn" data-accordion-btn>
+                  <h3 class="title-sm">How long is the delivery?</h3>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="qna-content">
+                  <p align="justify" class="body-md">
+					Delivery times may vary depending on stock availability. Before clicking the add to basket button, you may view the anticipated delivery timeline.
+
+					<br>1. Multiple item orders for PC Build may take 1-3 business days longer than the indicated delivery timeline. This is owing to the increased complexity of the assembling, testing, and packaging processes. 
+					<br>2. Laptop units with desired apps may take 1-2 business days longer than the expected period.
+					<br>3. Orders in some areas of Visayas and Mindanao may take up to 1-3 business days longer than the expected delivery timeline. 
+					
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="qna-item">
+              <div class="qna-yanwebshop" data-accordion>
+
+                <button class="qna-btn" data-accordion-btn>
+                  <h3 class="title-sm">How is Cash on Delivery works?</h3>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="qna-content">
+                  <p align="justify" class="body-md">
+                    Except for heavy packaged products such as monitors, chassis, laptops, and furniture, we provide countrywide cash on delivery for up to Php 50,000.00. 
+					If cash on delivery is not an option, you may choose our partial payment and full payment options. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            
+            <li class="qna-item">
+              <div class="qna-yanwebshop" data-accordion>
+
+                <button class="qna-btn" data-accordion-btn>
+                  <h3 class="title-sm">Do You Have a Question About Counterfeit, Fake Products, Imitation, OEM, or Copy?</h3>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="qna-content">
+                  <p align="justify" class="body-md">
+                    We are anti-piracy and do not offer counterfeit goods. 
+                    Any products delivered by our official shop and Bermor Techzone are 100% real and may be registered through their respective brand website for extended warranty, ongoing promotions, or counter verification. 
+                    Please check the brand's website's where to buy section for confirmation. We compete on price. 
+                    We promise the lowest or reasonable pricing, but if you discover a lower price on an identical in stock local item from a verified retailer, we will endeavor to beat or match the price. 
+                    Thank you, and have fun shopping.
+                    
+					
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="fourthpart"aria-label="contact">
+        <div class="container" align="justify">
+          <br><br><br>
+          <h2 class="headline-md section-title text-center">Question and Answer? Contact us!</h2>
+
+            YANSHOP is a well-known and reputable online retailer in the Philippines of brand new IT and electrical items. 
+            Our mission is to provide the most comprehensive variety of technology items and great service to our clients. 
+            We are committed to providing a seamless online shopping experience while providing high-quality items and services. <br><br>
+            
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfpKbMsDTPVzHxdDXTzvctQLLcmkvPxsLdkpNWWgXtjQMcrhZDRJwpDxfQqwhkJjgFjlDq" class="footer-link">yanshopmarket@gmail.com</a>
+              
+              <ion-icon name="call-outline" aria-hidden="true" ></ion-icon>
+
+              <a href="tel:+111 234-567-891" class="footer-link">+111 234-567-891</a>
+
+              <ion-icon name="logo-instagram"></ion-icon>
+
+              <a href="https://www.instagram.com/early.tots/" class="footer-link">@earlytots</a>
+
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <a href="facebook.com/eYanBrayle" class="footer-link">Ian Bryle Callo</a>
+            </li>
+        </div>
+
+      </section>
+
+      <!--
+        - #TERMS AND CONDITIONS 
+      -->
+
+      <section class="section contact" id="tandcon"aria-label="contact">
+        <div class="container" align="justify">
+          <br><br><br>
+          <h2 class="headline-md section-title text-center">TERMS AND CONDITIONS OVERVIEW</h2>
+            YANSHOP Computer Parts and Accessories runs this website. YANSHOP  is referred to as "we", "us", and "our" throughout the site. YANSHOP  provides you, the user, with this website, including all information, tools, and Services available through this site, conditioned on your acceptance of all terms, conditions, policies, and notices contained here. <br>
+            The following Terms of Service apply to all site users, including browsers, suppliers, customers, merchants, and content creators. These Terms of Service apply to all users of the site, including browsers, suppliers, customers, merchants, and content creators. Acceptance is solely restricted to these Terms of Service if these Terms of Service are deemed an offer. 
+            Any new features or tools added to the current shop will be subject to the Terms of Service as well. The shop is hosted by Shopify Inc., which provides an online e-commerce platform through which we may sell our products and services to you.
+           <br><br> <h2 class="headline-md section-title text-center">SECTION 1 – ONLINE STORE TERMS</h2>
+            
+            By agreeing to these Terms of Service, you signify that you are at least the legal age of majority in your state or province of residence, or that you are the legal age of majority in your state or province of residence and have granted us permission to enable any of your minor dependents to use this site.
+            You may not use our goods for any unlawful or unauthorized purpose, and you may not break any laws in your area (including, but not limited to, copyright laws) by using the Service.
+            You are not permitted to send any worms, viruses, or disruptive code.
+            Any violation of the Terms will result in the immediate termination of your Services.
+            
+            <br><br> <h2 class="headline-md section-title text-center">SECTION 2 – GENERAL CONDITIONS</h2>
+            We have the right to refuse Service to anybody at any time for any reason.
+            You acknowledge that your content (except credit card information) may be transported unencrypted and may entail (a) transmissions across different networks and (b) modifications to meet and adapt to technical requirements of connected networks or devices. Credit card information is always encrypted during network transfer.
+            Without our explicit written consent, you undertake not to replicate, duplicate, copy, sell, resell, or exploit any component of the Service, use of the Service, or access to the Service or any contact on the website through which the Service is delivered.
+            
+            The headers in this agreement are presented for convenience only and have no bearing on the Terms.
+            
+
+          </p>
+        </div>
+
+      </section>
+
+      <section class="section contact" id="aboutsamo"aria-label="contact">
+        <div class="container" align="justify">
+          <br><br><br>
+          <h2 class="headline-md section-title text-center">About us!</h2>
+
+          YANSHOP tech is a well-known and reputable online retailer of brand new IT and electrical items. 
+          Our major mission is to provide the most comprehensive variety of technology items and great service to our customers across the country. 
+          To do this, we are always innovating and improving our user-friendly website, mobile apps, various simple payment methods, brand-certified warranties, dynamic fulfillment branches, and vast shopping platform.
+          We are committed to maintaining our unique approach to providing a seamless online shopping experience while providing our consumers with high-quality items and services.
+            
+
+          <br><br> <h2 class="headline-md section-title text-center">MISSION</h2>
+
+          YANSHOP tech is dedicated to facilitating our company's and our business partners' success through QCE: (QUALITY, COMMUNICATION, AND EXCELLENCE).
+
+          Provide the highest QUALITY products and services for online tech buying in the Philippines.
+          Maintain effective communication with our customers and business partners. To remain relevant in their lives and create long-term ties.
+          To strive for EXCELLENCE in whatever we do.
+        
+          <br><br> <h2 class="headline-md section-title text-center">VISION</h2>
+        
+          To maintain our reputation for expertise, value, and integrity.
+          Long-term success through the use of our creative and comprehensive online shopping solutions.
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      
+      <section class="section newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-yanwebshop">
+
+            <div>
+              <h3 class="headline-md text-center">Want to be receive some latest sales and news? Follow our email!</h3>
+
+              <p class="body-md yanwebshop-text text-center">
+                Subscribe to get latest updates and information.
+              </p>
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="Enter your email :" required class="input-field">
+
+              <button class="btn btn-popping">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main> 
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#">
+            <img src="./assets/images/minilogoyey.png" width="130" height="32" loading="lazy" alt="YANSHOP homeclick">
+          </a>
+
+          <p class="body-md footer-text">
+            ONE OF THE BEST TECH STORE, EASY TO BUY AND FAST!
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="title-lg footer-list-title">YANSHOP</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Explore Item</span>
+            </a>
+          </li>
+
+
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">History</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="title-lg footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#aboutsamo" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#secondpart" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Latest Deals</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#tandcon" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Terms & Condition</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Login</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <ul>
+
+            <li>
+              <p class="title-lg footer-list-title">Download the YANSHOP app</p>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="#">
+                <img src="./assets/images/appstore.png" width="134" height="40" loading="lazy"
+                  alt="Download YANSHOP app from AppStore">
+              </a>
+
+              <a href="#">
+                <img src="./assets/images/playstore.png" width="134" height="40" loading="lazy"
+                  alt="Download YANSHOP app from PlayStore">
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <p class="title-lg footer-list-title">Contact Details</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfpKbMsDTPVzHxdDXTzvctQLLcmkvPxsLdkpNWWgXtjQMcrhZDRJwpDxfQqwhkJjgFjlDq" class="footer-link">yanshopmarket@gmail.com</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+111 234-567-891" class="footer-link">+111 234-567-891</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
     </div>
 
-     <div class="grid-container">
+    <div class="footer-bottom">
+      <div class="container">
 
-          <div class="grid-item">
-         <img src="./image/400(6).png" width="207.33" height="180"> </div> 
-          <div class="grid-item"><img src="./image/400 (1).png" width="207.33" height="180"></div>
-          <div class="grid-item"><img src="./image/400 (2).png" width="207.33" height="180"> </div>
-          <div class="grid-item"><img src="./image/400 (3).png" width="207.33" height="180"> </div>
-          <div class="grid-item"><img src="./image/400(4).png" width="207.33" height="180"> </div>
-          <div class="grid-item"><img src="./image/400(5).png" width="207.33" height="180"></div>
-          <div class="grid-item"><img src="./image/400(6).png" width="207.33" height="180"></div>
-          <div class="grid-item"><img src="./image/400 (7).png" width="207.33" height="180"></div>
-        </div>
-      
+        <p class="body-md text-center copyright">
+			&copy; 2022 YAN SHOP. Developed by Earl and Rhyle. Based from YT tutorials.
+        </p>
 
-</section>
+      </div>
+    </div>
+
+  </footer>
+  <!-- 
+    - #BACK TO TOP
+  -->
+  <a href="#top" class="back-to-top btn-icon" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <div class="body-bg-shape"></div>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
   <script src="js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- POP UP-->
+
 </body>
 </html>

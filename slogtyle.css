@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('https://img.wattpad.com/3850c645a16b33d17793dd7d3dd8e05ffc226946/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a6b62634a54626a782d316171513d3d2d313130393831383931312e313639376533643932323838333332663638363834393236343836362e676966?s=fit&w=720&h=720');
+	background-size: cover;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.login-container{
+	background-color: rgba(51, 95, 253, 0.8);
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+    
+    
+}
+
+.register-container{
+    background-color: rgb(231, 173, 48);
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+    opacity: 0.9;
+}
+
+.login-container h2,
+.register-container h2 {
+	margin-top: 0;
+}
+
+.login-container form,
+.register-container form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login-container label,
+.register-container label {
+	margin-top: 10px;
+}
+
+.login-container input,
+.register-container input,
+.login-container button,
+.register-container button {
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.login-container button,
+.register-container button {
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+}
+
+.login-container button:hover,
+.register-container button:hover {
+	background-color: #3e8e41;
+}
+
+.hidden {
+	display: none;
+}

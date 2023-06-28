@@ -15,7 +15,7 @@ const passwordError = document.getElementById('passwordError');
 const message = document.querySelector('span');
 
 // button
-const logoutBtn = document.getElementById('logout');
+
 
 // user signup
 if (signupForm) {
@@ -141,22 +141,6 @@ if (loginForm) {
   });
 
 }
-
-// user logout
-if (logoutBtn) {
-
-  const fullname = document.getElementById('fullname');
-
-  fullname.innerText = localStorage.getItem('fullname');
-  fullname.style.color = 'orange';
-
-  logoutBtn.addEventListener('click', function() {
-    location.replace('index.html');
-  });
-
-}
-
-
 
 // regular expressions
 
